@@ -37,7 +37,7 @@
 	mid_length = 0.85 SECONDS
 	end_sound = list('sound/items/weapons/chainsaw_stop.ogg' = 1)
 	end_volume = 35
-	volume = 40
+	volume = 100
 	ignore_walls = FALSE
 
 /datum/looping_sound/beesmoke

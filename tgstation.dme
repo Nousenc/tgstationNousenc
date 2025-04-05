@@ -2876,6 +2876,7 @@
 #include "code\game\objects\structures\lavaland\gulag_vent.dm"
 #include "code\game\objects\structures\lavaland\necropolis_tendril.dm"
 #include "code\game\objects\structures\lavaland\ore_vent.dm"
+#include "code\game\objects\structures\lootchest\lootchest.dm"
 #include "code\game\objects\structures\plaques\_plaques.dm"
 #include "code\game\objects\structures\plaques\static_plaques.dm"
 #include "code\game\objects\structures\signs\_signs.dm"

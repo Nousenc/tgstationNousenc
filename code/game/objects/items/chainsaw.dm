@@ -2,17 +2,17 @@
 // CHAINSAW
 /obj/item/chainsaw
 	name = "chainsaw"
-	desc = "A versatile power tool. Useful for limbing trees and delimbing humans."
+	desc = "testpenis"
 	icon = 'icons/obj/weapons/chainsaw.dmi'
 	icon_state = "chainsaw"
 	icon_angle = 180
 	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/chainsaw_righthand.dmi'
 	obj_flags = CONDUCTS_ELECTRICITY
-	force = 13
+	force = 999
 	w_class = WEIGHT_CLASS_HUGE
-	throwforce = 13
-	throw_speed = 2
+	throwforce = 999
+	throw_speed = 1
 	throw_range = 4
 	demolition_mod = 1.5
 	custom_materials = list(/datum/material/iron= SHEET_MATERIAL_AMOUNT * 6.5)
@@ -22,8 +22,8 @@
 	sharpness = SHARP_EDGED
 	actions_types = list(/datum/action/item_action/startchainsaw)
 	tool_behaviour = TOOL_SAW
-	toolspeed = 1.5 //Turn it on first you dork
-	var/force_on = 24
+	toolspeed = 1 //Turn it on first you dork
+	var/force_on = 999
 	/// The looping sound for our chainsaw when running
 	var/datum/looping_sound/chainsaw/chainsaw_loop
 	/// How long it takes to behead someone with this chainsaw.
@@ -39,7 +39,7 @@
 		throwforce_on = force_on, \
 		throw_speed_on = throw_speed, \
 		sharpness_on = SHARP_EDGED, \
-		hitsound_on = 'sound/items/weapons/chainsawhit.ogg', \
+		hitsound_on = 'sound/items/weapons/fart_sound_test.ogg', \
 		w_class_on = w_class, \
 	)
 
@@ -48,9 +48,9 @@
 /obj/item/chainsaw/proc/apply_components()
 	AddComponent(/datum/component/butchering, \
 		speed = 3 SECONDS, \
-		effectiveness = 100, \
+		effectiveness = 900, \
 		bonus_modifier = 0, \
-		butcher_sound = 'sound/items/weapons/chainsawhit.ogg', \
+		butcher_sound = 'sound/items/weapons/fart_sound_test.ogg', \
 		disabled = TRUE, \
 	)
 	AddComponent(/datum/component/two_handed, require_twohands = TRUE)
